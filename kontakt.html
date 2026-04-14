@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampania IRBIS – O mnie</title>
+    <link rel="stylesheet" href="../style.css">
+
+    <style>
+        body {
+            background:
+                linear-gradient(135deg, rgba(15, 61, 30, 0.95), rgba(46, 125, 50, 0.95)),
+                url('../pictrues2/tekstura_lisci.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', sans-serif;
+            color: #fff;
+        }
+
+        .blok-o-mnie {
+            width: 90%;
+            max-width: 900px;
+            margin: 60px auto;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.45);
+            border-radius: 18px;
+            border: 2px solid rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(6px);
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.4);
+        }
+
+        .blok-o-mnie h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #ffe9b0;
+        }
+
+        .blok-o-mnie p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+
+        /* GALERIA */
+        .galeria {
+            width: 95%;
+            max-width: 1200px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .galeria h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffe9b0;
+        }
+
+        .galeria-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 18px;
+        }
+
+        .galeria-grid img {
+            width: 100%;
+            height: 260px;
+            object-fit: cover;
+            border-radius: 14px;
+            border: 2px solid rgba(255, 255, 255, 0.35);
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .galeria-grid img:hover {
+            transform: scale(1.03);
+            box-shadow: 0 0 18px rgba(0, 0, 0, 0.6);
+        }
+
+        @media (max-width: 600px) {
+            .galeria-grid img {
+                height: 220px;
+            }
+        }
+
+        /* FILMY */
+        .filmy {
+            width: 90%;
+            max-width: 900px;
+            margin: 60px auto;
+            text-align: center;
+        }
+
+        .filmy h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffe9b0;
+        }
+
+        .filmy video,
+        .filmy iframe {
+            width: 100%;
+            max-width: 700px;
+            border-radius: 12px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="../pictrues/logo_zsi1.png" alt="Logo ZSI">
+    <nav>
+        <a href="../index.html">Strona główna</a>
+        <a href="../gatnuki.html">Gatunki</a>
+        <a href="../quiz.html">Quiz</a>
+        <a href="../kontakt.html">Kontakt</a>
+    </nav>
+</header>
+
+<section class="blok-o-mnie">
+    <h2>O mnie</h2>
+    <p>
+        Mam na imię Nikola, mam 17 lat i jestem uczennicą Zespołu Szkół Informatycznych na kierunku technik weterynarii.
+        Już w przedszkolu, kiedy zadawano mi pytanie, kim chcę zostać w przyszłości, zawsze odpowiadałam, że weterynarzem.
+        Miłość do zwierząt towarzyszy mi od najmłodszych lat i z czasem tylko się pogłębiała.
+        <br><br>
+        Do kampanii IRBIS dołączyłam z powodu mojej ogromnej pasji do zwierząt zarówno tych egzotycznych, jak i domowych
+        czy hodowlanych. Na co dzień opiekuję się kilkoma własnymi podopiecznymi, gekonem lamparcim, agamą brodatą,
+        szczurami, psem oraz chomikiem. Dzięki nim każdego dnia uczę się odpowiedzialności, cierpliwości i tego,
+        jak ważna jest właściwa opieka nad zwierzętami.
+        <br><br>
+        Miałam także okazję mieć kontakt z innymi zwierzętami, między innymi podczas jazdy konnej. Nie boję się
+        przypadkowo napotkanych zwierząt i zawsze staram się okazywać im troskę, szacunek oraz zrozumienie.
+        <br><br>
+        Udział w kampanii IRBIS jest dla mnie bardzo ważny, ponieważ daje mi możliwość pokazania ludziom,
+        jak odpowiedzialnie opiekować się zwierzętami i jak dbać o życie, które samo nie może zabrać głosu.
+        Wierzę, że dzięki edukacji i większej świadomości możemy sprawić, że świat stanie się lepszym miejscem
+        dla wszystkich zwierząt.
+    </p>
+</section>
+
+<section class="galeria">
+    <h2>Zdjęcia zwierząt</h2>
+    <div class="galeria-grid">
+
+        <img src="../pictrueskontakt/1.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/2.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/3.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/4.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/5.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/6.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/7.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/8.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/9.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/10.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/11.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/12.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/13.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/15.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/16.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/17.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/18.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/19.jpg" alt="zwierze">
+        <img src="../pictrueskontakt/20.jpg" alt="zwierze">
+
+    </div>
+</section>
+
+
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kampania IRBIS – Gatunki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-image: url(pictrues2/tło_gatunki.png);">
+    
+
+<header>
+        <img src="pictrues/logo_zsi1.png" alt="Logo ZSI">
+        <nav>
+            <a href="index.html">Strona główna</a>
+            <a href="gatnuki.html">Gatunki</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+    </header>
+
+
+
+    <style>
+
+        /* ====== STYL BADGE (BUZIEK) ====== */
+
+        .badge {
+            padding: 6px 12px;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #fff;
+            display: inline-block;
+            font-size: 15px;
+        }
+
+        .badge.easy {
+            background: #4CAF50;
+        }
+
+        .badge.medium {
+            background: #FFC107;
+            color: #000;
+        }
+
+        .badge.hard {
+            background: #F44336;
+        }
+
+        /* ====== ROZWIJANA LEGENDA ====== */
+
+        .legend-container {
+            background: #ffffff;
+            border-radius: 12px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            overflow: hidden;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .legend-header {
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            background: #f5f5f5;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #legend-content {
+            display: none;
+            padding: 15px;
+            background: #fff;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+
+        .legend-item p {
+            margin: 0 0 0 10px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- ====== ROZWIJANA LEGENDA ====== -->
+
+    <div class="legend-container">
+        <div class="legend-header" onclick="toggleLegend()">
+            <span>📗 Legenda trudności hodowli</span>
+            <span id="legend-arrow">▼</span>
+        </div>
+
+        <div id="legend-content" class="legend-content">
+            <div class="legend-item">
+                <span class="easy">🙂 Łatwa</span>
+                <p>Dla początkujących. Proste wymagania, tanie utrzymanie.</p>
+            </div>
+
+            <div class="legend-item">
+                <span class="medium">😐 Średnia</span>
+                <p>Dla ogarniętych. Wymaga wiedzy i stabilnych warunków.</p>
+            </div>
+
+            <div class="legend-item">
+                <span class="hard">😬 Trudna</span>
+                <p>Dla zaawansowanych. Duże wymagania, ryzyko błędów.</p>
+            </div>
+
+             <div class="legend-item">
+    <span class="badge papers">📄</span>
+    <p>Gatunek wymaga potwierdzenia legalnego pochodzenia (np. CITES).</p>
+</div>
+
+        </div>
+    </div>
+
+    <!-- ====== JS ====== -->
+
+    <script>
+
+        function toggleLegend() {
+            const box = document.getElementById("legend-content");
+            const arrow = document.getElementById("legend-arrow");
+
+            if (box.style.display === "block") {
+                box.style.display = "none";
+                arrow.textContent = "▼";
+            } else {
+                box.style.display = "block";
+                arrow.textContent = "▲";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
+
+
+
+
+<section>
+    <h2 class="title">Poznaj gatunki zwierząt egzotycznych</h2>
+    <div class="gatunki">
+        <a href="weze/węże.html" class="gatunek">
+            <img src="pictrues3/weżegłowne.webp" alt="Pyton królewski">
+            <span>Węże</span>
+        </a>
+        <a href="jaszczurki/jaszczurki.html" class="gatunek">
+            <img src="pictrues3/gekon lamparci.jpg" alt="Gekon lamparci">
+            <span>Jaszczurki</span>
+      
+        <a href="plazy/PŁAZY.HTML" class="gatunek">
+            <img src="pictrues/płązy1.jpg" alt="Salamandra">
+            <span>Płazy</span>
+        </a>
+        <a href="ptaki/ptaki.html" class="gatunek">
+            <img src="pictrues/papugaara.jpg" alt="Papuga ara">
+            <span>Ptaki</span>
+        </a>
+        <a href="ssakiegzotyczne/ssakiegzotyczne.html" class="gatunek">
+            <img src="pictrues/kapucynka.webp" alt="Kapucynka">
+            <span>Ssaki egzotyczne</span>
+        </a>
+    
+        <a href="bezkregowce/bezkregowce.html" class="gatunek">
+            <img src="pictrues/modliszka_zwykła.jpg" alt="Modliszka">
+            <span>Bezkręgowce</span>
+        </a>
+    </div>
+</section>
+
+
+
+<footer>
+    Strona wykonana w ramach kampanii IRBIS – VIII edycja
+</footer>
+
+</body>
+</html>
